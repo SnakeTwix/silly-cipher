@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Input normal:</h1>
+        <textarea id="converter_input_area"></textarea>
+        <h1>Output cipher:</h1>
+        <div class="output" id="converter_output_area"></div>
+        <button id="converter_btn">Copy</button>
+    </div>
+    <div class="box">
+        <h1>Input cipher:</h1>
+        <textarea id="decipher_input_area"></textarea>
+        <h1>Output normal:</h1>
+        <div class="output" id="decipher_output_area"></div>
+        <button id="decipher_btn">Copy</button>
+    
+    </div>
+    <style>
+        textarea {
+            width: 40em;
+            height: 10em;
+        }
+
+        .output {
+            border: 1px solid black;
+            width: 40em;
+            height: 10em;
+        }
+
+        .box {
+            margin: 2em;
+        }
+
+        body {
+
+            display: flex;
+        }
+
+        button {
+            padding: 2rem 4rem;
+            font-size: 2em;
+            margin: 1rem 0;
+            cursor: pointer;
+        }
+    </style>
+    <script src="index.js"></script>
+</body>
+
+</html>
