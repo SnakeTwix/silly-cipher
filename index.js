@@ -41,7 +41,7 @@ converterInputArea.addEventListener("input", e => {
     converterOutputArea.innerText = convert(converterInputArea.value)
 })
 
-converterBtnBtn.addEventListener(() => {
+converterBtn.addEventListener("click", () => {
     Navigator.clipboard.writeText(convert(converterInputArea.value))
 })
 
@@ -54,6 +54,6 @@ decipherInputArea.addEventListener("input", e => {
     decipherOutputArea.innerText = decipher(decipherInputArea.value)
 })
 
-decipherBtn.addEventListener(() => {
+decipherBtn.addEventListener("click", () => {
     Navigator.clipboard.writeText(decipher(decipherInputArea.value))
 })
