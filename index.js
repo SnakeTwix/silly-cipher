@@ -4,8 +4,8 @@ const rows = [
     "ячсмитьбю."
 ];
 
-const converterMap = {};
-const decipherMap = {};
+const converterMap = {" ": " "};
+const decipherMap = {" ": " "};
 
 for (let row of rows) {
     for (let i = 0; i < row.length; i++) {
